@@ -18,7 +18,7 @@ body {
 
 .btn {
   display: inline-block;
-  background-color: var(--primary-color);
+  background-color:#2075F0;
   color: #fff;
   padding: 0.5rem 1rem;
   border: none;
@@ -32,6 +32,28 @@ body {
   background-color: #0058b7;
   color: #fff;
 }
+
+
+/* Slider */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slider-container {
+  display: flex;
+  animation: slide 10s linear infinite;
+}
+
+.slider-container img {
+  width: 100%;
+  object-fit: contain;
+}
+
 
 .btn-back {
   display: inline-block;
@@ -48,10 +70,10 @@ body {
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: #0047ab;
-  color: #fff;
+ 
+  
   padding: 1rem;
   border-bottom: 5px solid #fff;
 }
@@ -70,13 +92,11 @@ body {
 
 .links a {
   margin: 0 0.5rem 0 0.5rem;
-  color: #fff;
+  color: #596379;
   text-decoration: none;
 }
 
-.links a:hover {
-  text-decoration: underline;
-}
+
 
 .search-form {
   display: flex;
