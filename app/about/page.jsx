@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionTitle from '../components/SectionTitle';
 
 const AboutPage = () => {
     return (
@@ -37,34 +38,34 @@ const AboutPage = () => {
                     <img className='lg:max-w-[220px] max-w-[120px]' src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBusinessStandard.047c592d.png&w=640&q=75" alt="" />
                 </div>
                 <div className="grid grid-cols-4">
-                    <div className="card rounded-box">
+                    <div className=" rounded-box">
                     <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInv1.1c87bc0c.png&w=640&q=75" alt="" />
                     </div>
-                    <div className="card rounded-box">
+                    <div className=" rounded-box">
 
                     <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInv2.331b31f9.png&w=640&q=75" alt="" />
                     </div>
-                    <div className="card rounded-box">
+                    <div className=" rounded-box">
                         
                     <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInv3.1779e0d4.png&w=640&q=75" alt="" />
                     </div>
-                    <div className="card rounded-box">
+                    <div className=" rounded-box">
                         
                     <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInv4.b9325fa0.png&w=640&q=75" alt="" />
                     </div>
-                    <div className="card rounded-box">
+                    <div className=" rounded-box">
                         
                     <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInv5.2e962217.png&w=640&q=75" alt="" />
                     </div>
-                    <div className="card rounded-box">
+                    <div className=" rounded-box">
                         
                     <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInv6.7a958b9d.png&w=640&q=75" alt="" />
                     </div>
-                    <div className="card rounded-box">
+                    <div className=" rounded-box">
                         
                     <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInv7.3b8a633d.png&w=640&q=75" alt="" />
                     </div>
-                    <div className="card rounded-box">
+                    <div className=" rounded-box ">
                     <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInv8.bcbe6091.png&w=640&q=75" alt="" />
                         
                     </div>
@@ -72,6 +73,21 @@ const AboutPage = () => {
 
 
             </section>
+            <section>
+                <SectionTitle mainTitle={'Meet Our Founders'} subTitle={'Few words from founders desk'} />
+                <div className="flex justify-center">
+                    <div>
+                        <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FManish.519c8845.png&w=640&q=75" alt="" />
+                    </div>
+                    <div>
+                        <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FYash.126e24ca.png&w=640&q=75" alt="" />
+                    </div>
+                    <div>
+                        <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLokesh.ead063e7.png&w=640&q=75" alt="" />
+                    </div>
+                </div>
+            </section>
+            <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAboutUsFooter.d2311d39.png&w=3840&q=100" alt="" />
         </div>
     );
 };
