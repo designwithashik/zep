@@ -1,6 +1,7 @@
 import './globals.css'
 import { Quicksand } from 'next/font/google'
 import Header from './components/Header'
+import Footer from './components/Foooter'
 const quicksand = Quicksand({
   subsets: ['latin'],
   weight: ['300', '400', '500', '700']
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className={quicksand.className}>
         <Header/>
         <main className=''>{children}</main>
+        <Footer/>
       </body>
     </html>
   )
