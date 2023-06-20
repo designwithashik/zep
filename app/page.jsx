@@ -18,29 +18,48 @@ const products = [
 const HomePage = () => {
   return (
     <>
-      <section className="flex gap-5 items-center relative bg-[rgba(21,132,250,0.35)] lg:h-[368px]">
-      <div className="lg:w-1/2 p-14">
-          <h2 className="text-[40px] font-bold">Become a Financial Advisor and <span className="text-[#264EFF]">Earn Rs.1 Lakh/Month</span></h2>
-          <p>No investment required</p>
+      <div className="container-section">
+      <section className="flex items-center relative bg-[rgba(21,132,250,0.35)] lg:h-[368px]">
+      <div className="p-14  w-2/3">
+          <h2 className="text-[38px] font-bold w-full">Become a Financial Advisor and <span className="text-[#264EFF]">Earn Rs.1 Lakh/Month</span></h2>
+          <p className="text-xl mb-7 ">No investment required</p>
           <img className="h-[50px]" src="https://zetapp.in/_next/static/media/downloadBtnDark.a0f01343.svg" alt="" />
         </div>
       
           
         
-        <div className="right-5 -top-5 absolute hidden max-w-[410px] lg:block">
+        <div className="right-5 -top-16 absolute hidden max-w-[410px] lg:block w-1/3">
           <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeroImgNew.d1d917dd.png&w=750&q=75" alt="" />
         </div>
       </section>
       
-      <section>
+      <section className="my-28 ">
         <SectionTitle mainTitle={'Top Brands on ZET'} subTitle={'We are trusted by best brands in the country'} />
         <ImageSlider/>
       </section>
+      </div>
 
       <section>
         <SectionTitle mainTitle={'Products on ZET'} subTitle={'We are trusted by best brand in the country'} />
         <div className="grid grid-cols-2">
         {products.map(product=><ProductCard product={product}/>)}
+        </div>
+      </section>
+      <section>
+        <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpeeps1.2a271552.png&w=750&q=75" alt="" />
+      </section>
+      <section className="lg:flex">
+        <div className="w-1/3">
+          <h2>Why Choose Use</h2>
+          <p>Why we are loved by our customers</p>
+          <img className="lg:block hidden" src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FwhyUsHero.76b303ee.png&w=384&q=75" alt="" />
+        </div>
+        <div className="w-2/3 grid grid-cols-4">
+          <div className="">
+            <img src="https://zetapp.in/_next/static/media/zero_investment.d5743aab.svg" alt="" />
+            <p>Training & Upskilling</p>
+            <p>Get trained by finance and sales experts</p>
+          </div>
         </div>
       </section>
     
