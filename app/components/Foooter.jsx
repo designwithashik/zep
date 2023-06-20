@@ -1,10 +1,11 @@
 
 const Footer = () => {
     return (
-        <div className="bg-[#007aff] text-white">
+        <div className="bg-[#007aff]  text-white py-14">
+            <div className="container-section">
             <div className="logo"><img src="https://zetapp.in/_next/static/media/zet_logo_white.04e35c15.svg" alt="" /></div>
             <hr className="text-white" />
-            <div className="grid grid-cols-4">
+            <div className="grid grid-cols-4 mb-5">
                 <div>
                     <h2>COMPANY</h2>
                     <p>About Us</p>
@@ -28,8 +29,10 @@ const Footer = () => {
                         <p>LinkedIn</p>
                     </div>
                 </div>
-            </div>
-            <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAboutUs.085fb7a2.png&w=1920&q=100" alt="" />
+                </div>
+                </div>
+            <img className="w-full absolute" src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAboutUs.085fb7a2.png&w=1920&q=100" alt="" />
+            
         </div>
 
     );

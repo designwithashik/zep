@@ -29,7 +29,7 @@ const ImageSlider = () => {
         1024: 5, 
       };
       const breakpoints = {
-        // Configure breakpoints for different slide counts
+        
         0: { slidesPerView: slidesPerView[0] },
         768: { slidesPerView: slidesPerView[768] },
         1024: { slidesPerView: slidesPerView[1024] },
@@ -41,7 +41,7 @@ const ImageSlider = () => {
         loop: true,
         effect: 'fade',
         fadeEffect: { crossFade: true },
-        speed: 2000, // Adjust the animation speed (in milliseconds)
+        speed: 2000,
       };
       
         

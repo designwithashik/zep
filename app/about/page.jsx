@@ -1,10 +1,12 @@
+'use client'
 import React from 'react';
 import SectionTitle from '../components/SectionTitle';
+import { Slide } from 'react-awesome-reveal';
 
 const AboutPage = () => {
     return (
         <div>
-            <section className="relative text-white">
+            <section className="relative mb-24 text-white">
                 <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FOurMission.13d85461.png&w=3840&q=100" alt="" />
                 <div className='absolute top-1/3 left-1/4 w-1/2 text-center'><h2 className='font-bold text-[40px]'>OUR MISSION</h2>
                     Enabling financial inclusion for the next billion Indians
@@ -13,14 +15,14 @@ const AboutPage = () => {
                     <p className='font-bold mt-5'>EARN BETTER. LIVE BETTER.</p></div>
             </section>
 
-            <section>
+            <section className='container-section '>
                 <h2 className='text-center font-bold text-[40px]'>How we evolved over the years</h2>
                 <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FGrowth.abe5b7d8.png&w=1920&q=100" alt="" />
             </section>
 
-            <section className='bg-[#FAFBFE]'>
+            <section className='bg-[#FAFBFE] py-14 md:px-7 lg:px-40'>
                 <h3 className='text-[40px] font-bold' >Got Featured</h3>
-                <div className="flex justify-evenly">
+                <div className="flex justify-evenly gap-5">
                     <img className='lg:max-w-[220px] max-w-[120px]' src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FEconomicTimes.5724030e.png&w=640&q=75" alt="" />
                     <img className='lg:max-w-[220px] max-w-[120px]' src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInc42.7697aec8.png&w=640&q=75" alt="" />
                     <img className='lg:max-w-[220px]  max-w-[120px]' src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmint.410f3a1a.png&w=640&q=75" alt="" />
@@ -28,16 +30,18 @@ const AboutPage = () => {
                     <img className='lg:max-w-[220px] max-w-[120px]' src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBusinessStandard.047c592d.png&w=640&q=75" alt="" />
                 </div>
             </section>
-            <section>
+            <section className='container-section'>
             <h3 className='text-[40px] font-bold'>Meet the Investors</h3>
-            <div className="flex justify-evenly">
+                <Slide direction='up'>
+                <div className="flex justify-evenly gap-5 my-7">
                     <img className='lg:max-w-[220px] max-w-[120px]' src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInvCompany1.41d5c5bd.png&w=640&q=75" alt="" />
                     <img className='lg:max-w-[220px] max-w-[120px]' src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInvCompany2.3f604866.png&w=640&q=75" alt="" />
                     <img className='lg:max-w-[220px] max-w-[120px]' src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInvCompany3.c16095cb.png&w=640&q=75" alt="" />
                     <img className='lg:max-w-[220px] max-w-[120px]' src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInvCompany4.9acb56c2.png&w=640&q=75" alt="" />
                     <img className='lg:max-w-[220px] max-w-[120px]' src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBusinessStandard.047c592d.png&w=640&q=75" alt="" />
                 </div>
-                <div className="grid grid-cols-4">
+            </Slide>
+                <div className="grid grid-cols-4 gap-7">
                     <div className=" rounded-box">
                     <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInv1.1c87bc0c.png&w=640&q=75" alt="" />
                     </div>
@@ -75,7 +79,7 @@ const AboutPage = () => {
             </section>
             <section>
                 <SectionTitle mainTitle={'Meet Our Founders'} subTitle={'Few words from founders desk'} />
-                <div className="flex justify-center">
+                <div className="flex justify-center container-section gap-5">
                     <div>
                         <img src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FManish.519c8845.png&w=640&q=75" alt="" />
                     </div>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = () => {
     return (
-        <header className="header  mb-24">
+        <header className="header  ">
             <div>
                 <img className="w-[90px] h-auto" src="https://zetapp.in/_next/static/media/zet_new_logo.7adcc993.svg" alt="logo" />
             </div>
